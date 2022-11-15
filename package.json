@@ -4,11 +4,13 @@
   "description": "Browser based game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikaMurs/npm-package.git"
+    "url": "https://github.com/NikaMurs/npm_package"
   },
   "keywords": [
     "game"
@@ -16,7 +18,18 @@
   "author": "NikaMurs",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NikaMurs/npm-package/issues"
+    "url": "https://github.com/NikaMurs/npm_package/issues"
   },
-  "homepage": "https://github.com/NikaMurs/npm-package#readme"
+  "homepage": "https://github.com/NikaMurs/npm_package#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "core-js": "^3.26.1"
+  }
 }
